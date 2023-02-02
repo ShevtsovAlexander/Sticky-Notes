@@ -12,7 +12,7 @@ body {
 	position: relative;
 }
 
-button{
+button {
 	padding: 8px;
 	outline: none;
 	cursor: pointer;
@@ -22,15 +22,15 @@ button{
 	border: 1px solid lightgray;
 	
   }
-  button:hover{
+  button:hover {
 	color: white;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: transparent;
   }
 
  #modal {
 	position: fixed;
 	z-index: 1;
-	width: 100%;
+	width: 100vw;
 	min-height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
  } 
@@ -45,14 +45,14 @@ button{
 	align-items: center;
   }
 
-#inner_modal{
+#inner_modal {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
   }
 
-#inner_modal textarea{
+#inner_modal textarea {
 	width: 276px;
 	height: 276px;
 	padding: 25px;
@@ -62,11 +62,12 @@ button{
 	font-family: inherit;
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
   }
+
 .container {
 	width: 100%;
 	margin: auto;
 }
-#inner_modal i{
+#inner_modal i {
 	font-size: 1.4rem;
 	color: gray;
 	cursor: pointer;
@@ -74,20 +75,20 @@ button{
 	margin-left: -35px;
 	transition: 0.5s ease-in-out;
   }
-  #inner_modal i:hover{
+  #inner_modal i:hover {
 	color: lightgray;
   }
 
   .fas.fa-sticky-note{
 	color: #c2ff3d;
   }
-  #all_notes{
+  #all_notes {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-top: 10%;
   }
-  .note{
+  .note {
 	width:300px;
 	height: 300px;
 	transition: 2s;
@@ -106,13 +107,13 @@ button{
 	cursor: pointer;
 	text-shadow: 1px 1px #BBB;
   }
-  @media(max-width:1280px){
+  @media(max-width:1280px) {
 	.container{
 	  width: 100%;
 	}
   }
   
-  @media(max-width:768px){
+  @media(max-width:768px) {
 	#header{
 	  padding: 20px;
 	  gap: 10px;
@@ -120,5 +121,19 @@ button{
 	  align-items: center;
 	  text-align: center;
 	}
+	#inner_modal textarea {
+	width: 176px;
+	height: 176px;
+	padding: 25px;
+
   }
+  #inner_modal i {
+	font-size: 1.4rem;
+	color: gray;
+	cursor: pointer;
+	margin-top: -135px;
+	margin-left: -31px;
+  }
+  }
+  
   
